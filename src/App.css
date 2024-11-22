@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #8f688f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #a37da3;
+}
+
+nav button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #8f688f;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  padding: 10px;
+  background-color: #8f688f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #C8A2C8;
+}
+
+form button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #C8A2C8;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.account-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.account-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.account-list li:last-child {
+  border-bottom: none;
+}
+
+.account-list span {
+  display: inline-block;
+  min-width: 100px;
+  font-weight: bold;
+}
+form button {
+  padding: 10px;
+  background-color: #8f688f; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+form button {
+  padding: 10px;
+  background-color: #8f688f !important; 
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #744974 !important; 
+}
+
+
+
+
+
+.comptes-list {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comptes-list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comptes-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.comptes-list th,
+.comptes-list td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.comptes-list th {
+  background-color: #8f688f;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.comptes-list tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.comptes-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+.comptes-list td {
+  font-size: 1rem;
+}
+
+.comptes-list tr td {
+  text-align: center;
+}
+
+.comptes-list button {
+  background-color: #8f688f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.comptes-list button:hover {
+  background-color: #6b4d6b;
 }
